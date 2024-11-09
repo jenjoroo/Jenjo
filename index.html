@@ -1,19 +1,232 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/browserconfig.xml">
-    
-    <title>Instagram Clone</title>
-    
-    <!-- Microsoft Edge Specific Optimizations -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="root"></div>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   MiJo
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="min-h-screen flex flex-col">
+   <!-- Navbar -->
+   <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+     <a class="text-2xl font-bold text-gray-800" href="#">
+      MiJo
+     </a>
+     <div>
+      <a class="text-gray-800 hover:text-gray-600 mx-2" href="#">
+       Home
+      </a>
+      <a class="text-gray-800 hover:text-gray-600 mx-2" href="#">
+       Profile
+      </a>
+      <a class="text-gray-800 hover:text-gray-600 mx-2" href="#">
+       Logout
+      </a>
+     </div>
+    </div>
+   </nav>
+   <!-- Main Content -->
+   <div class="container mx-auto flex-1 px-4 py-6">
+    <div class="flex justify-center">
+     <div class="w-full md:w-2/3 lg:w-1/2">
+      <!-- Post Form -->
+      <div class="bg-white p-4 rounded-lg shadow-md mb-6">
+       <h2 class="text-xl font-bold mb-4">
+        Create a Post
+       </h2>
+       <form>
+        <textarea class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="What's on your mind?" rows="4"></textarea>
+        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600" type="submit">
+         Post
+        </button>
+       </form>
+      </div>
+      <!-- Posts -->
+      <div class="space-y-6">
+       <!-- Post 1 -->
+       <div class="bg-white p-4 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+         <img alt="Profile picture of user 1" class="w-10 h-10 rounded-full mr-3" height="50" src="c:\Users\John Mark\Downloads\photo_6127327965588078186_y.jpg" width="50"/>
+         <div
+          <h3 class="font-bold">
+           Jenjoro
+          </h3>
+          <p class="text-gray-600 text-sm">
+           2 hours ago
+          </p>
+         </div>
+        </div>
+        <p class="mb-4">
+         Gwapo kayko
+        </p>
+        <div class="flex items-center justify-between">
+         <div class="flex items-center">
+          <button class="text-gray-600 hover:text-blue-500 mr-2">
+           <i class="fas fa-thumbs-up">
+           </i>
+           Like
+          </button>
+          <button class="text-gray-600 hover:text-blue-500">
+           <i class="fas fa-comment">
+           </i>
+           Comment
+          </button>
+         </div>
+         <p class="text-gray-600">
+          5k likes
+         </p>
+        </div>
+        <!-- Comments -->
+        <div class="mt-4">
+         <div class="flex items-center mb-2">
+          <img alt="Profile picture of commenter 1" class="w-8 h-8 rounded-full mr-2" height="40" src="c:\Users\John Mark\Downloads\6280451843272328234.jpg" width="40"/>
+          <div>
+           <h4 class="font-bold">
+            Michi
+           </h4>
+           <p class="text-gray-600 text-sm">
+            frfr istugo
+           </p>
+          </div>
+         </div>
+         <div class="flex items-center mb-2">
+          <img alt="Profile picture of commenter 2" class="w-8 h-8 rounded-full mr-2" height="40" src="c:\Users\John Mark\Downloads\6138753119761316885.jpg" width="40"/>
+          <div>
+           <h4 class="font-bold">
+            hanee
+           </h4>
+           <p class="text-gray-600 text-sm">
+            alangan
+           </p>
+          </div>
+         </div>
+         <form class="mt-2">
+          <input class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Add a comment..." type="text"/>
+         </form>
+        </div>
+       </div>
+       <!-- Post 2 -->
+       <div class="bg-white p-4 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+         <img alt="Profile picture of user 2" class="w-10 h-10 rounded-full mr-3" height="50" src="c:\Users\John Mark\Downloads\6287466791882048730.jpg" width="50"/>
+         <div>
+          <h3 class="font-bold">
+           Joro
+          </h3>
+          <p class="text-gray-600 text-sm">
+           5 hours ago
+          </p>
+         </div>
+        </div>
+        <p class="mb-4">
+         I love my hanii
+        </p>
+        <div class="flex items-center justify-between">
+         <div class="flex items-center">
+          <button class="text-gray-600 hover:text-blue-500 mr-2">
+           <i class="fas fa-thumbs-up">
+           </i>
+           Like
+          </button>
+          <button class="text-gray-600 hover:text-blue-500">
+           <i class="fas fa-comment">
+           </i>
+           Comment
+          </button>
+         </div>
+         <p class="text-gray-600">
+          3k likes
+         </p>
+        </div>
+        <!-- Comments -->
+        <div class="mt-4">
+         <div class="flex items-center mb-2">
+          <img alt="Profile picture of commenter 3" class="w-8 h-8 rounded-full mr-2" height="40" src="c:\Users\John Mark\Downloads\6136501319947632919.jpg" width="40"/>
+          <div>
+           <h4 class="font-bold">
+            Azilla
+           </h4>
+           <p class="text-gray-600 text-sm">
+            dapat lang?
+           </p>
+          </div>
+         </div>
+         <form class="mt-2">
+          <input class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Add a comment..." type="text"/>
+         </form>
+        </div>
+       </div>
+       <!-- Post 3 -->
+       <div class="bg-white p-4 rounded-lg shadow-md">
+        <div class="flex items-center mb-4">
+         <img alt="Profile picture of user 3" class="w-10 h-10 rounded-full mr-3" height="50" src="c:\Users\John Mark\Downloads\6100347951697215604.jpg" width="50"/>
+         <div>
+          <h3 class="font-bold">
+           Honeybunch
+          </h3>
+          <p class="text-gray-600 text-sm">
+           1 day ago
+          </p>
+         </div>
+        </div>
+        <p class="mb-4">
+         boang kaayo kos akong haniii
+        </p>
+        <div class="flex items-center justify-between">
+         <div class="flex items-center">
+          <button class="text-gray-600 hover:text-blue-500 mr-2">
+           <i class="fas fa-thumbs-up">
+           </i>
+           Like
+          </button>
+          <button class="text-gray-600 hover:text-blue-500">
+           <i class="fas fa-comment">
+           </i>
+           Comment
+          </button>
+         </div>
+         <p class="text-gray-600">
+          10k likes
+         </p>
+        </div>
+        <!-- Comments -->
+        <div class="mt-4">
+         <div class="flex items-center mb-2">
+          <img alt="Profile picture of commenter 4" class="w-8 h-8 rounded-full mr-2" height="40" src="c:\Users\John Mark\Downloads\photo_6127327965588078186_y.jpg" width="40"/>
+          <div>
+           <h4 class="font-bold">
+            Jenjoro
+           </h4>
+           <p class="text-gray-600 text-sm">
+            ako nagud ni
+           </p>
+          </div>
+         </div>
+         <form class="mt-2">
+          <input class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Add a comment..." type="text"/>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Footer -->
+   <footer class="bg-white shadow-md py-4">
+    <div class="container mx-auto text-center text-gray-600">
+    </div>
+   </footer>
+  </div>
+ </body>
 </html>
